@@ -133,11 +133,12 @@ body{
 .hero-section{
     background-color: var(--color-footer);
     padding: 200px 0;
-    background-image:url(../images/backround.jpg) ;
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/backround.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
 
 .hero-title{
     color:var(--color-white);
@@ -178,12 +179,17 @@ body{
 
 .title-advantages{
     flex-basis: calc((100% - 90px) / 4);
+    
+}
+.icon-advantages{
     width: 270px;
     height: 120px;
     background-color: var(--color-backround);
-}
-.icon-advantages{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 .heading-title{
     color: var(--color-title);
@@ -316,12 +322,14 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     padding: 6px 22px;
+    border-radius: 4px;
 }
 
 .button-portfolio:hover,
 .button-portfolio:focus{
     background-color: var(--color-button-nav);
     color:var(--color-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio{
@@ -333,15 +341,17 @@ body{
 .portfolio-box{
     flex-basis: calc((100% - 60px) / 3);
 }
-
-.box{
-    padding: 19px 23px;
+.box-imeges{
     border: 1px solid;
     border-color: var(--color-border); 
     background-color: var(--color-white);
 }
-.box:hover,
-.box:focus{
+.box{
+    padding: 19px 23px;
+}
+
+.box-imeges:hover,
+.box-imeges:focus{
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -367,7 +377,12 @@ body{
     background-color:var(--color-footer);
     padding: 60px 0;
 }
-.footer-section{
+.footer-container{
+    display: flex;
+    gap: 70px;
+    align-content: center;
+}
+.box-address{
     
 }
 
@@ -403,6 +418,9 @@ body{
 }
 .footer-address:last-child{
     margin-bottom: 0;
+}
+.footer-social{
+margin-top: 12px;
 }
 .footer-title{
     margin-bottom: 20px;
