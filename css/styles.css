@@ -94,6 +94,13 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.icon-phone:hover,
+.icon-phone:focus,
+.icon-envelope:hover,
+.icon-envelope:focus{
+    fill: var(--color-button-nav);
+}
+
 .heder-text:hover,
 .heder-text:focus{
     color: var(--color-button-nav);
