@@ -94,16 +94,11 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.icon-phone:hover,
-.icon-phone:focus,
-.icon-envelope:hover,
-.icon-envelope:focus{
-    fill: var(--color-button-nav);
-}
 
 .heder-text:hover,
 .heder-text:focus{
     color: var(--color-button-nav);
+    fill: var(--color-button-nav);
 }
 
 .heder-conteiner{
@@ -143,9 +138,8 @@ body{
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/backround.jpg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size:contain;
+    background-size:cover;
 }
-
 
 .hero-title{
     color:var(--color-white);
@@ -285,7 +279,8 @@ body{
     border-radius: 50%;
     fill: var(--color-icon);
 }
-.socials-link:hover{
+.socials-link:hover,
+.socials-link:focus{
     background-color: var(--color-button-nav);
     fill: var(--color-white);
 }
@@ -293,13 +288,17 @@ body{
 .customers{
     display: flex;
     gap: 30px;
+   
 }
+
 .customers-list{
     width: 170px;
     height: 92px;
     border: 1px solid var(--color-icon);
     border-radius: 4px;
-    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     fill: var(--color-icon);
 }
 .customers-list:hover,
@@ -456,7 +455,8 @@ margin-top: 12px;
     border-radius: 50%;
     fill: var(--color-white);
 }
-.footer-socials-link:hover{
+.footer-socials-link:hover,
+.footer-socials-link:focus{
     background-color: var(--color-button-nav);
     fill: var(--color-white);
 }
