@@ -93,6 +93,9 @@ body{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
+    gap: 10px;
+    fill: var(--color-text-paragraph);
 }
 
 .heder-text:hover,
@@ -119,11 +122,6 @@ body{
     margin-left: 308px;
     align-items: center;
 }
-.icon-phone, .icon-envelope{
-    display: flex;
-    gap: 10px;
-    fill: var(--color-text-paragraph);
-}
 
 .hedre-menu{
     display: flex;
@@ -133,12 +131,13 @@ body{
 
 /*Секція герой*/
 .hero-section{
-    background-color: var(--color-footer);
-    padding: 200px 0;
+    padding: 200px 15px;
     background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/backround.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size:cover, 1600px;
+    background-position: center;
+    max-width: 1600px;
+    background-size: cover;
+    margin: 0 auto;
 }
 
 .hero-title{
